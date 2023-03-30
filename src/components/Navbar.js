@@ -20,7 +20,7 @@ const Nav = styled.nav`
 
   & > img {
     margin: 1rem 0;
-    width: 7rem;
+    width: 10rem;
   }
 
   ul {
@@ -46,6 +46,15 @@ const Nav = styled.nav`
   @media (max-width: 540px) {
     height: auto;
     flex-flow: column wrap;
+
+    ul {
+      li a {
+        padding: 0 1rem;
+        padding-bottom: 12px;
+        transition: font-weight, border-bottom 0.2s;
+        border-bottom: 3px solid ${(props) => props.theme.colors.primary};
+      }
+    }
   }
 `;
 
@@ -74,8 +83,12 @@ const CurrentFavorite = styled.span`
   text-align: center;
   color: ${(props) => props.theme.colors.secundary};
   position: absolute;
-  left: -15%;
+  left: 100%;
   top: -3px;
+
+  @media (max-width: 540px) {
+    top: 0px;
+  }
 `;
 
 const Navbar = () => {
@@ -84,16 +97,16 @@ const Navbar = () => {
   return (
     <Container>
       <Nav>
-        <img src="icons/logo-small.svg" alt="" />
+        <img src="icons/logoo.svg" alt="" />
         <ul>
+          <Item className={`${router.asPath == "/search" && "active"}`}>
+            <Link href="/search">Procurar</Link>
+          </Item>
           <Item
             className={`${router.asPath == "/favorites" && "active"} favorite`}
           >
             <Link href="/favorites">Favoritos</Link>
             <CurrentFavorite>{countFavorited}</CurrentFavorite>
-          </Item>
-          <Item className={`${router.asPath == "/search" && "active"}`}>
-            <Link href="/search">Procurar</Link>
           </Item>
         </ul>
       </Nav>
