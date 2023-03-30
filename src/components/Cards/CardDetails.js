@@ -87,6 +87,10 @@ const Container = styled.div`
 
   @media (max-width: 540px) {
     min-width: auto;
+
+    & > div > img:first-child {
+      margin-left: 0%;
+    }
   }
 `;
 
@@ -121,7 +125,7 @@ const Details = () => {
         <ul>
           <li>
             <p>Status</p>
-            <p>{`${selectedCharacter.species}`}</p>
+            <p>{`${selectedCharacter.status}`}</p>
           </li>
         </ul>
         <br />
