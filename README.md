@@ -1,10 +1,10 @@
-<h1 align="center">Catálogo de Personagens do Rick and Morty ✅</h1>
+<h1 align="center">Rick and Morty Character Catalog ✅</h1>
 
-<p align="left">Este projeto foi desenvolvido em JavaScript, utilizando a biblioteca React e integrando com a API do Rick and Morty (https://rickandmortyapi.com/documentation/).
+<p align="left">This project was developed in JavaScript, using the React library and integrating with the Rick and Morty API (https://rickandmortyapi.com/documentation/).
 
 <br />
 
-A aplicação consiste em uma tela de listagem de personagens com busca e uma tela de detalhes que exibe informações detalhadas sobre o personagem, além de permitir que o usuário adicione o personagem aos seus favoritos.
+The application consists of a searchable character listing screen and a details screen that displays detailed information about the character, as well as allowing the user to add the character to their favorites.
 
 </p>
 
@@ -38,27 +38,27 @@ A aplicação consiste em uma tela de listagem de personagens com busca e uma te
 
 <br />
 
-Teste você mesmo!!🔎 https://rick-and-morty-api-xi-ten.vercel.app/
+Test yourself!!🔎 https://rick-and-morty-api-xi-ten.vercel.app/
 
 <br />
 
-## 🎡 Funcionalidades
+## 🎡 Functionalities
 
-- Listagem de personagens, com busca por nome.
+- List of characters, with search by name.
 
-- Detalhes do personagem, incluindo imagem, nome, espécie, gênero, status e localização atual.
+- Character details including image, name, species, genus, status and current location.
 
 - Opção para adicionar o personagem aos favoritos.
 
-- Paginação da listagem de personagens.
+- Option to add character to favorites.
 
-- Layout responsivo, que se adapta a diferentes tamanhos de tela e a dispositivo móvel. 
+- Responsive layout, which adapts to different screen sizes and mobile devices.
 
 <br />
 
-## 🔧 Recursos utilizados
+## 🔧 Resources used
 
-Esse projeto foi desenvolvido com as seguintes recursos e tecnologias:
+This project was developed with the following resources and technologies:
 
 - [Next 13](https://nextjs.org/)
 - [React](https://react.dev/)
@@ -72,35 +72,35 @@ Esse projeto foi desenvolvido com as seguintes recursos e tecnologias:
 
 <br />
 
-## 🚀 Como executar o projeto
+## 🚀 How to run the project
 
 <br />
 
-1. Clone o repositório para sua máquina local.
+1. Clone the repository to your local machine.
 
 ```bash
 $ git clone https://github.com/maarcusvinicius/RickAndMorty-API.git
 ```
 
-2. Navegue para o diretório do projeto e instale as dependências.
+2. Navigate to the project directory and install dependencies.
 
 ```bash
 $ cd RickAndMorty-API
 $ npm install
 ```
 
-3. Inicie o servidor de desenvolvimento.
+3. Start the development server.
 
 ```bash
 $ npm start
 ```
 
-4. Abra o navegador e acesse http://localhost:3000 para visualizar a aplicação.
+4. Open your browser and go to http://localhost:3000 to view the application.
 
 <br />
 
 
-## 💻 Estrutura do projeto
+## 💻 Project structure
 
 ```bash
 RickAndMorty-API/
@@ -150,87 +150,73 @@ RickAndMorty-API/
 
 <br />
 
-## 🏍️ Componentes
+## 🏍️ Components
 
 <br />
 
 <h3>Buttons</h3>
 
-- `DefaultButton`: Este componente renderiza um botão padrão com um estilo básico.
+- `DefaultButton`: This component renders a default button with a basic style.
 
-- `FavoriteButton`: Este componente renderiza um botão que adiciona um personagem da lista de favoritos. Ele utiliza o contexto de favoritos para gerenciar a lista.
+- `FavoriteButton`: This component renders a button that adds a character from the favorites list. It uses the bookmarks context to manage the list.
 
-- `PrimaryButton`: Este componente renderiza um botão com um estilo primário.
+- `PrimaryButton`: This component renders a button with a primary style.
 
-- `RemoveFavoriteButton`: Este componente renderiza um botão que remove um personagem da lista de favoritos. Ele utiliza o contexto de favoritos para gerenciar a lista.
+- `RemoveFavoriteButton`: This component renders a button that removes a character from the favorites list. It uses the bookmarks context to manage the list.
 
 <h3>Cards</h3>
 
-- `Card`: Este componente renderiza um card com informações básicas de um personagem.
+- `Card`: This component renders a card with basic information about a character.
 
-- `CardDetails`: Este componente renderiza os detalhes de um personagem em um modal.
+- `CardDetails`: This component renders the details of a character in a modal.
 
 <h3>Loaders</h3>
 
-- `CardLoader.js`: Este componente exibe um loader circular enquanto os dados do personagem estão sendo carregados. Ele é utilizado na página de detalhes do personagem.
+- `CardLoader.js`: This component displays a circular loader while character data is being loaded. It is used on the character details page.
 
-<h3>Outros</h3>
+<h3>Others</h3>
 
-- `Container.js`: Este componente é responsável por centralizar e definir as margens do conteúdo do aplicativo. É utilizado em todas as páginas.
+- `Container.js`: This component is responsible for centering and defining the margins of the application's content. It is used on all pages.
 
-- `Input.js`: Este componente é responsável por renderizar um campo de entrada de texto com um ícone de busca. É utilizado na página de busca.
+- `Input.js`: This component is responsible for rendering a text input field with a search icon. It is used on the search page.
 
-- `Navbar.js`: Este componente é responsável por renderizar a barra de navegação do aplicativo. Ela contém os links para as páginas de busca e favoritos.
+- `Navbar.js`: This component is responsible for rendering the application's navigation bar. It contains links to search and bookmark pages.
 
-- `SearchField.js`: Este componente é responsável por renderizar um campo de pesquisa que é utilizado na página de busca.
+- `SearchField.js`: This component is responsible for rendering a search field that is used on the search page.
 
-<h3>Contextos</h3>
+<h3>Contexts</h3>
 
-- `DataContext.js`: Este contexto é responsável por gerenciar o estado global dos personagens que são exibidos no aplicativo. Ele armazena os dados dos personagens, as categoriza as funções para buscar personagens e adicionar/remover favoritos.
+- `DataContext.js`: This context is responsible for managing the global state of the characters that are displayed in the application. It stores character data, categorizes them, functions to search for characters and add/remove favorites.
 
-- `ModalContext.js`: Este contexto é responsável por gerenciar o estado global do modal que é exibido ao selecionar um personagem.
+- `ModalContext.js`: This context is responsible for managing the global state of the modal that is displayed when selecting a character.
 
-<h3>Páginas</h3>
+<h3>Pages</h3>
 
-- `_app.js:` Este arquivo é responsável por definir a estrutura básica do aplicativo. Ele inclui o Provider do contexto.
+- `_app.js:` This file is responsible for defining the basic structure of the application. It includes the context Provider.
 
-- `_document.js:` Este arquivo é responsável por definir a estrutura básica do documento HTML. Ele inclui as tags HTML, HEAD e BODY, bem como a tag root do React.
+- `_document.js:` This file is responsible for defining the basic structure of the HTML document. It includes the HTML, HEAD, and BODY tags, as well as the React root tag.
 
-- `favorites.js`: Esta página exibe a lista de personagens favoritos que foram adicionados pelo usuário. Ela utiliza o componente CardList para renderizar os cards dos personagens favoritos.
+- `favorites.js`: This page displays the list of favorite characters that have been added by the user. It uses the CardList component to render favorite characters' cards.
 
-- `index.js`: Esta página index redireciona para a rota da aplicação.
+- `index.js`: This index page redirects to the application path.
 
-- `search.js`: Esta página exibe uma lista de personagens filtrados por pesquisa pelo nome. É possível navegar entre as páginas e adicionar ou remover personagens favoritos.
+- `search.js`: This page displays a list of characters filtered by name search. It is possible to navigate between pages and add or remove favorite characters.
 
 
 <br />
 <br />
 <h4 align="center"> 
-	🚧  RickAndMorty-API ✅ FINALIZADO  🚧
+	🚧  RickAndMorty-API ✅ FINISHED  🚧
 </h4>
 <br />
 <br />
 <br />
 <br />
-
-## Sobre a Green Acesso
-
-<p>
-A Green Acesso é uma empresa especializada em soluções de controle de acesso para condomínios. Seus produtos incluem o aparelho biométrico sem contato MorphoWave Compact, biometrias como IDFlex da ControlID e software financeiro e contábil para organização de boletos e almoxarifado. A empresa busca constantemente inovar e oferecer tecnologias de ponta para seus clientes.</p>
-
-## Agradecimentos
-
-<p>
-Gostaria de agradecer à equipe da Green Acesso pela oportunidade de participar do processo seletivo e apresentar minhas habilidades em desenvolvimento de projetos em Javascript com React. Espero que este projeto demonstre meu comprometimento e capacidade de trabalhar em equipe, e que possa contribuir para o crescimento da empresa.</p>
-
-
-
-
 <br />
 <br />
 <br />
 
-Feito com ❤️ por Marcus Vinicius 👋🏽 Entre em contato!
+Made with ❤️ from Marcus Vinicius 👋🏽 Contact me!
 
 
 
@@ -250,19 +236,20 @@ Feito com ❤️ por Marcus Vinicius 👋🏽 Entre em contato!
 //feito readme marcus
 
 
-### Olá, sou Marcus <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" >
+### 𝐇𝐞𝐥𝐥𝐨 𝐭𝐡𝐞𝐫𝐞, 𝐟𝐞𝐥𝐥𝐨𝐰 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" >
 
-Sou Desenvolvedor Web, um programador procurando fazer a diferença no mundo digital. [**Profile Github**](https://github.com/maarcusvinicius). 🚀
+I'm a Web Developer, a programmer looking to make <Br/>
+a difference in the digital world. [**Profile Github**](https://github.com/maarcusvinicius). 🚀
 
-#### Minhas ferramentas atuais
-📲 Front-end Mobile com React Native  
-🌎 Front-end Web com Reactjs  
-📡 Back-end com Nodejs  
+#### My current tools
+📲 Front-end Mobile with React Native  
+🌎 Front-end Web with Reactjs  
+📡 Back-end with Nodejs  
 🛠️ Typescript  
 🧰 And more...  
 
 
-#### 💬 Encontre-me em outro lugar
+#### 💬 Find me elsewhere
 
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcus-vinicius-507718228/)](https://www.linkedin.com/in/marcus-vinicius-507718228/)
 [![Gmail Badge](https://img.shields.io/badge/-marcus.editor77@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:marcus.editor77@gmail.com)](marcus.editor77@gmail.com)
