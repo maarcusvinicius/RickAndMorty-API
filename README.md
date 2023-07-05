@@ -44,15 +44,15 @@ Test yourself!!🔎 https://rick-and-morty-api-xi-ten.vercel.app/
 
 ## 🎡 Functionalities
 
-- List of characters, with search by name.
+- List of characters, with search by name
 
-- Character details including image, name, species, genus, status and current location.
+- Character details including image, name, species, genus, status and current location
 
-- Opção para adicionar o personagem aos favoritos.
+- Opção para adicionar o personagem aos favoritos
 
-- Option to add character to favorites.
+- Option to add character to favorites
 
-- Responsive layout, which adapts to different screen sizes and mobile devices.
+- Responsive layout, which adapts to different screen sizes and mobile devices
 
 <br />
 
@@ -203,6 +203,17 @@ RickAndMorty-API/
 - `search.js`: This page displays a list of characters filtered by name search. It is possible to navigate between pages and add or remove favorite characters.
 
 
+<br />
+
+## License
+
+<p>
+
+This project is licensed under the [MIT License](https://opensource.org/license/mit/). Feel free to use, modify and distribute it as needed.
+
+</p>
+
+<br />
 <br />
 <br />
 <h4 align="center"> 
